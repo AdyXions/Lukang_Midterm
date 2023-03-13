@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm A</title>
+</head>
+<body>
+    <h1>Job Roles in Data Science / Big Data Industry</h1>
+    <ul>
+        {%for job in jobroles%}
+
+        <li>
+            <p>{{job|title}}</p>    
+        </li>
+            <p>Character Count: {{job|length}}</p>
+        {%endfor%}
+    </ul>
+</body>
+</html>
